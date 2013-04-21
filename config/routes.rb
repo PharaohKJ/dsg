@@ -1,4 +1,22 @@
 Dsg::Application.routes.draw do
+  resources :mtb_among_card_types
+
+
+  resources :mtb_among_card_expantions
+
+
+  resources :mtb_cards
+
+
+  resources :mtb_expantions
+
+
+  resources :mtb_publishers
+
+
+  resources :mtb_card_types
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
