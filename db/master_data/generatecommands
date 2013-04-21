@@ -1,0 +1,7 @@
+bundle exec rails generate scaffold mtb_card_type name:string
+bundle exec rails generate scaffold mtb_publisher name:string
+bundle exec rails generate scaffold mtb_expantion name:string released_at:date mtb_publisher_id:integer
+bundle exec rails generate scaffold mtb_card name:string jname:string text:text cost:integer need_pot:integer coin:integer victory:integer card:integer action:integer buy:integer virtual_coin:integer vitory_token:integer
+bundle exec rails generate scaffold mtb_among_card_expantion mtb_card_id:integer mtb_expantion_id:integer override_name:string override_text:text
+bundle exec rails generate scaffold mtb_among_card_type mtb_card_id:integer mtb_card_type_id:integer
+
