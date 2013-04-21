@@ -1,0 +1,29 @@
+<h1>Listing mtb_among_card_expantions</h1>
+
+<table>
+  <tr>
+    <th>Mtb card</th>
+    <th>Mtb expantion</th>
+    <th>Override name</th>
+    <th>Override text</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @mtb_among_card_expantions.each do |mtb_among_card_expantion| %>
+  <tr>
+    <td><%= mtb_among_card_expantion.mtb_card_id %></td>
+    <td><%= mtb_among_card_expantion.mtb_expantion_id %></td>
+    <td><%= mtb_among_card_expantion.override_name %></td>
+    <td><%= mtb_among_card_expantion.override_text %></td>
+    <td><%= link_to 'Show', mtb_among_card_expantion %></td>
+    <td><%= link_to 'Edit', edit_mtb_among_card_expantion_path(mtb_among_card_expantion) %></td>
+    <td><%= link_to 'Destroy', mtb_among_card_expantion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Mtb among card expantion', new_mtb_among_card_expantion_path %>

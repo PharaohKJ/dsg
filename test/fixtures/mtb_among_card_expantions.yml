@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  mtb_card_id: 1
+  mtb_expantion_id: 1
+  override_name: MyString
+  override_text: MyText
+
+two:
+  mtb_card_id: 1
+  mtb_expantion_id: 1
+  override_name: MyString
+  override_text: MyText

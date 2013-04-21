@@ -1,0 +1,25 @@
+<%= form_for(@mtb_among_card_type) do |f| %>
+  <% if @mtb_among_card_type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mtb_among_card_type.errors.count, "error") %> prohibited this mtb_among_card_type from being saved:</h2>
+
+      <ul>
+      <% @mtb_among_card_type.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :mtb_card_id %><br />
+    <%= f.number_field :mtb_card_id %>
+  </div>
+  <div class="field">
+    <%= f.label :mtb_card_type_id %><br />
+    <%= f.number_field :mtb_card_type_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,45 @@
+<h1>Listing mtb_cards</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Jname</th>
+    <th>Text</th>
+    <th>Cost</th>
+    <th>Need pot</th>
+    <th>Coin</th>
+    <th>Victory</th>
+    <th>Card</th>
+    <th>Action</th>
+    <th>Buy</th>
+    <th>Virtual coin</th>
+    <th>Vitory token</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @mtb_cards.each do |mtb_card| %>
+  <tr>
+    <td><%= mtb_card.name %></td>
+    <td><%= mtb_card.jname %></td>
+    <td><%= mtb_card.text %></td>
+    <td><%= mtb_card.cost %></td>
+    <td><%= mtb_card.need_pot %></td>
+    <td><%= mtb_card.coin %></td>
+    <td><%= mtb_card.victory %></td>
+    <td><%= mtb_card.card %></td>
+    <td><%= mtb_card.action %></td>
+    <td><%= mtb_card.buy %></td>
+    <td><%= mtb_card.virtual_coin %></td>
+    <td><%= mtb_card.vitory_token %></td>
+    <td><%= link_to 'Show', mtb_card %></td>
+    <td><%= link_to 'Edit', edit_mtb_card_path(mtb_card) %></td>
+    <td><%= link_to 'Destroy', mtb_card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Mtb card', new_mtb_card_path %>

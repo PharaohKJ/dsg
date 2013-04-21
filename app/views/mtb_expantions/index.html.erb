@@ -1,0 +1,27 @@
+<h1>Listing mtb_expantions</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Released at</th>
+    <th>Mtb publisher</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @mtb_expantions.each do |mtb_expantion| %>
+  <tr>
+    <td><%= mtb_expantion.name %></td>
+    <td><%= mtb_expantion.released_at %></td>
+    <td><%= mtb_expantion.mtb_publisher_id %></td>
+    <td><%= link_to 'Show', mtb_expantion %></td>
+    <td><%= link_to 'Edit', edit_mtb_expantion_path(mtb_expantion) %></td>
+    <td><%= link_to 'Destroy', mtb_expantion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Mtb expantion', new_mtb_expantion_path %>

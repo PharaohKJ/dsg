@@ -1,0 +1,29 @@
+<%= form_for(@mtb_expantion) do |f| %>
+  <% if @mtb_expantion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mtb_expantion.errors.count, "error") %> prohibited this mtb_expantion from being saved:</h2>
+
+      <ul>
+      <% @mtb_expantion.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :released_at %><br />
+    <%= f.date_select :released_at %>
+  </div>
+  <div class="field">
+    <%= f.label :mtb_publisher_id %><br />
+    <%= f.number_field :mtb_publisher_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

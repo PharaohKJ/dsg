@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @mtb_expantion.name %>
+</p>
+
+<p>
+  <b>Released at:</b>
+  <%= @mtb_expantion.released_at %>
+</p>
+
+<p>
+  <b>Mtb publisher:</b>
+  <%= @mtb_expantion.mtb_publisher_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_mtb_expantion_path(@mtb_expantion) %> |
+<%= link_to 'Back', mtb_expantions_path %>

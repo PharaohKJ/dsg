@@ -1,0 +1,65 @@
+<%= form_for(@mtb_card) do |f| %>
+  <% if @mtb_card.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mtb_card.errors.count, "error") %> prohibited this mtb_card from being saved:</h2>
+
+      <ul>
+      <% @mtb_card.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :jname %><br />
+    <%= f.text_field :jname %>
+  </div>
+  <div class="field">
+    <%= f.label :text %><br />
+    <%= f.text_area :text %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br />
+    <%= f.number_field :cost %>
+  </div>
+  <div class="field">
+    <%= f.label :need_pot %><br />
+    <%= f.number_field :need_pot %>
+  </div>
+  <div class="field">
+    <%= f.label :coin %><br />
+    <%= f.number_field :coin %>
+  </div>
+  <div class="field">
+    <%= f.label :victory %><br />
+    <%= f.number_field :victory %>
+  </div>
+  <div class="field">
+    <%= f.label :card %><br />
+    <%= f.number_field :card %>
+  </div>
+  <div class="field">
+    <%= f.label :action %><br />
+    <%= f.number_field :action %>
+  </div>
+  <div class="field">
+    <%= f.label :buy %><br />
+    <%= f.number_field :buy %>
+  </div>
+  <div class="field">
+    <%= f.label :virtual_coin %><br />
+    <%= f.number_field :virtual_coin %>
+  </div>
+  <div class="field">
+    <%= f.label :vitory_token %><br />
+    <%= f.number_field :vitory_token %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  jname: MyString
+  text: MyText
+  cost: 1
+  need_pot: 1
+  coin: 1
+  victory: 1
+  card: 1
+  action: 1
+  buy: 1
+  virtual_coin: 1
+  vitory_token: 1
+
+two:
+  name: MyString
+  jname: MyString
+  text: MyText
+  cost: 1
+  need_pot: 1
+  coin: 1
+  victory: 1
+  card: 1
+  action: 1
+  buy: 1
+  virtual_coin: 1
+  vitory_token: 1

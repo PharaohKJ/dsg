@@ -1,0 +1,2 @@
+module MtbCardTypesHelper
+end
