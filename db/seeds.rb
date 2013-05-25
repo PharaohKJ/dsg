@@ -13,19 +13,26 @@ require "csv"
 basedir = 'db/master_data/'
 
 # mtb_publisher
+loop = 0
 CSV.foreach( basedir + 'mtb_publisher.csv', :headers => :first_row) do |row|
-  MtbPublisher.create(
-                      :name => row['name']
-                      )
+  MtbPublisher.create do |r|
+    r.id = row['id'] == nil ? loop : row['id']
+    r.name = row['name']
+  end
+  loop+=1
 end
 
 # mtb_card_type
+loop = 0 
 CSV.foreach(
             basedir + 'mtb_card_type.csv',
             :headers => :first_row,
             :encoding => 'UTF-8'
 ) do |row|
-  MtbCardType.create(
-                     :name => row['分類'])
-
+  
+  MtbCardType.create do |r|
+    r.id = row['id'] == nil ? loop : row['id']
+    r.name = row['分類']
+  end
+  loop+=1
 end
