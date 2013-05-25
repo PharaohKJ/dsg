@@ -9,4 +9,8 @@ class HelloController < ApplicationController
     @msg = 'こんにちは世界 on msg'
   end
 
+  def list
+    @types = MtbCardType.all
+  end
+
 end

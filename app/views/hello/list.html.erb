@@ -1,0 +1,15 @@
+
+<table border=1>
+  <th>id</th>
+  <th>name</th>
+  <% @types.each do |type| %>
+  <tr>
+    <td>
+      <%=type.id%>
+    </td>
+    <td>
+      <%=type.name%>
+    </td>
+  </tr>
+  <% end %>
+</table>
