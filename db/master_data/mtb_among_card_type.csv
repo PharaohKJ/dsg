@@ -1,4 +1,4 @@
-id,mtb_card_id,mtb_card_type_id,,
+id,mtb_card_id,card_name,mtb_card_type_a,mtb_card_type_b
 ,1,銅貨,基本,財宝
 ,2,銀貨,基本,財宝
 ,3,金貨,基本,財宝

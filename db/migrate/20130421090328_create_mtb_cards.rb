@@ -12,7 +12,7 @@ class CreateMtbCards < ActiveRecord::Migration
       t.integer :action
       t.integer :buy
       t.integer :virtual_coin
-      t.integer :vitory_token
+      t.integer :victory_token
 
       t.timestamps
     end

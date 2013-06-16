@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130616030938) do
+ActiveRecord::Schema.define(:version => 20130616051202) do
 
   create_table "mtb_among_card_expantions", :force => true do |t|
     t.integer  "mtb_card_id"
@@ -47,9 +47,10 @@ ActiveRecord::Schema.define(:version => 20130616030938) do
     t.integer  "action"
     t.integer  "buy"
     t.integer  "virtual_coin"
-    t.integer  "vitory_token"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.integer  "victory_token"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.integer  "special_cost"
   end
 
   create_table "mtb_expantions", :force => true do |t|
