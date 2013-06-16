@@ -22,6 +22,25 @@ CSV.foreach( basedir + 'mtb_publisher.csv', :headers => :first_row) do |row|
   loop+=1
 end
 
+loop = 0
+CSV.foreach(
+            basedir + 'mtb_expantion.csv', 
+            :headers => :first_row, 
+            :encoding=> 'UTF-8'
+) do |row|
+
+  MtbExpantion.create do |r|
+    r.id = row['id'] == nil ? loop : row['id']
+    r.name = row['name']
+    r.jname = row['jname']
+    # r.mtb_publisher_id = row['publisher_id']
+    r.released_at = row['released_at']
+  end
+  p row
+  loop+=1
+end
+
+
 # mtb_card_type
 loop = 0 
 CSV.foreach(

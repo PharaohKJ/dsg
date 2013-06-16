@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130421090401) do
+ActiveRecord::Schema.define(:version => 20130616030938) do
 
   create_table "mtb_among_card_expantions", :force => true do |t|
     t.integer  "mtb_card_id"
@@ -58,6 +58,7 @@ ActiveRecord::Schema.define(:version => 20130421090401) do
     t.integer  "mtb_publisher_id"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
+    t.string   "jname"
   end
 
   create_table "mtb_publishers", :force => true do |t|
